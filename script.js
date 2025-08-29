@@ -18,13 +18,13 @@ function  copyNumber(number) {
 }
 
 
-// Call service (costs 20 coins)
+// Call service 
 function callService(name, number) {
   if (coinCount < 20) {
     alert("Not enough coins to make a call!");
     return;
   }
-  
+
   coinCount -= 20;
   document.getElementById("coinCount").innerText = coinCount;
 
