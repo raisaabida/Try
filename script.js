@@ -9,13 +9,14 @@ function increaseHeart() {
 }
 
 // Copy number
-function copyNumber(number) {
+function  copyNumber(number) {
   navigator.clipboard.writeText(number).then(() => {
     alert("Copied: " + number);
     copyCount++;
     document.getElementById("copyCount").innerText = copyCount;
   });
 }
+
 
 // Call service (costs 20 coins)
 function callService(name, number) {
