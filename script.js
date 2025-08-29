@@ -24,6 +24,7 @@ function callService(name, number) {
     alert("Not enough coins to make a call!");
     return;
   }
+  
   coinCount -= 20;
   document.getElementById("coinCount").innerText = coinCount;
 
